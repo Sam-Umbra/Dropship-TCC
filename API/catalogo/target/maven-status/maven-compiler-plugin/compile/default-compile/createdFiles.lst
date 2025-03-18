@@ -3,3 +3,4 @@ br\dev\kajosama\catalogo\CatalogoApplication.class
 br\dev\kajosama\catalogo\entities\Produto.class
 br\dev\kajosama\catalogo\controllers\CatalogoController.class
 br\dev\kajosama\catalogo\repositories\CatalogoRepository.class
+br\dev\kajosama\catalogo\DTO\ProdutoFilterDTO.class
