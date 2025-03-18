@@ -61,3 +61,106 @@ body {
 .nav-bar a:hover { /*Sublinhar os itens*/
     text-decoration: underline;
 }
+
+/*caixa dos produtos*/
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    width: 230px;
+    height: 310px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.product-image {
+    max-width: 200%;
+    height: 200px;
+}
+
+
+.icons-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.icons-overlay i {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-card:hover .icons-overlay {
+    opacity: 1;
+}
+
+.product-info {
+    padding: 10px;
+    display: absolute;
+    flex-direction:column ;
+    justify-content: space-evenly;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.new-price {
+    font-size: 18px;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.payment {
+    font-size: 14px;
+    color: #666;
+}
+.btn-comprar {
+    margin-top: 0;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .btn-comprar {
+    opacity: 1;
+}
+

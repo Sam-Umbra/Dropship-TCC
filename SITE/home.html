@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css">
     <title>Vortix</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/src/home.css">
 </head>
 <header>
     <div class="top-bar">
@@ -23,19 +24,38 @@
             <i class="bi bi-moon-stars"></i> <!--Modo escuro-->
         </div>
     </div>
-        <nav class="nav-bar">
-            <a href="#">Categorias</a>  <!--DropDown-->
-            <a href="#">Filtro de valor</a> <!--DropDown-->
-            <a href="#">Promoções</a>
-            <a href="#">Marcas</a>
-            <a href="#">Lojas Parceiras</a>
-            <a href="#">Fornecedores</a>
-            <a href="#">Atendimento</a>
-        </nav> 
-        </div>
+    <nav class="nav-bar">
+        <a href="#">Categorias</a> <!--DropDown-->
+        <a href="#">Filtro de valor</a> <!--DropDown-->
+        <a href="#">Promoções</a>
+        <a href="#">Marcas</a>
+        <a href="#">Lojas Parceiras</a>
+        <a href="#">Fornecedores</a>
+        <a href="#">Atendimento</a>
+    </nav>
+    </div>
     </div>
 </header>
+
 <body>
-    
+    <section class="product-container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://img.terabyteshop.com.br/produto/p/ssd-kingston-nv2-1tb-m2-nvme-2280-leitura-3500mbs-e-gravacao-2100mbs-snv2s1000g_154119.jpg');">
+                <div class="icons-overlay">
+                    <i class="bi bi-cart3"></i>
+                    <i class="bi bi-heart"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Nome do Produto</h3>
+                <p class="old-price">R$ 1.000,00</p>
+                <p class="new-price">R$ 799,99</p>
+                <p class="payment">ou até 10x de R$ 79,99</p>
+            </div>
+            <div class="btn-buy">
+                <button class="btn-comprar">Comprar 🛒</button>
+            </div>
+        </div>
+    </section>    
 </body>
 </html>
